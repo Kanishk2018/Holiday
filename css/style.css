@@ -1,0 +1,622 @@
+@import url("font.css");
+body {
+  background: #fff;
+  font-family: "Montserrat", arial, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #6c757d;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #e61c5d;
+}
+
+::selection {
+  color: #fff;
+  background: #e61c5d;
+}
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #000;
+  font-family: "Montserrat", times, serif;
+}
+
+.container-fluid {
+  max-width: 1600px;
+}
+
+.btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 40px;
+}
+
+.btn:focus, .btn:active, .form-control:focus, .form-control:active {
+  outline: none;
+}
+
+
+.site-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 60px 0;
+  z-index: 2;
+}
+
+.site-header ul{
+  list-style-type: none;
+  color: #fff;
+  display: inline-flex;
+  float: right;
+}
+
+.site-header ul li{
+margin-right: 10px;
+font-size: 14px;
+}
+.site-header ul li:first-child{
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.menu-open .site-header {
+  position: fixed;
+}
+
+.site-logo a {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Montserrat", times, serif;
+}
+
+.site-navbar {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  min-height: 300px;
+  overflow-y: scroll;
+}
+
+.site-navbar nav {
+  text-align: left;
+}
+
+.site-navbar nav .menu {
+  font-family: "Montserrat", times, serif;
+}
+
+.site-navbar nav .menu li a {
+  color: #000;
+  font-size: 40px;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.site-navbar nav .menu li a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: 0%;
+  z-index: -1;
+  background: #e61c5d;
+  -webkit-transition: .3s all ease-in-out;
+  -o-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+}
+
+.site-navbar nav .menu li a:hover:before {
+  width: 100%;
+}
+
+.site-navbar nav .menu li.active a:before {
+  width: 100%;
+}
+
+.site-navbar .extra-info a {
+  color: #000;
+}
+
+.site-navbar .extra-info ul li a {
+  color: #000;
+}
+
+.site-navbar .extra-info h3 {
+  font-family: "Montserrat", arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: .2em;
+  color: #adb5bd;
+  margin-bottom: 30px;
+}
+
+.site-navbar .extra-info p {
+  color: #212529;
+}
+
+.full-height {
+  height: 100vh;
+  min-height: 700px;
+}
+
+.site-hero {
+  background-size: cover;
+  height: 100vh;
+  min-height: 700px;
+  width: 100%;
+}
+
+.site-hero .scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: #fff;
+}
+
+.site-hero.overlay:before {
+  background: rgba(0, 0, 0, 0.45);
+  content: "";
+  position: absolute;
+  height: 100vh;
+  min-height: 700px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.site-hero-inner {
+  height: 100vh;
+  min-height: 700px;
+}
+
+.site-hero-inner .heading {
+  font-size: 52px;
+  font-family: "Montserrat", times, serif;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+  .site-hero-inner .heading {
+    font-size: 40px;
+  }
+}
+
+.site-hero-inner .sub-heading {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #f7f3f2;
+}
+
+@media (max-width: 991.98px) {
+  .site-hero-inner .sub-heading {
+    font-size: 18px;
+  }
+}
+
+.page-inside .site-hero-inner, .page-inside {
+  height: 70vh;
+  min-height: 500px;
+}
+
+.page-inside.overlay:before {
+  height: 70vh;
+  min-height: 500px;
+}
+
+.menu-open .site-menu-toggle span {
+  background: #000;
+}
+
+
+.section {
+  padding-top: 95px;
+}
+
+@media (max-width: 991.98px) {
+  .section {
+    padding: 3em 0;
+  }
+}
+
+
+.common-section .heading {
+  font-size: 22px;
+  font-family: "Montserrat", arial, sans-serif;
+  color: #444444;
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+
+
+
+
+/* Button : Start*/
+
+hr {
+    height: 2px;
+    background-color: #ff4e50;
+  }
+
+.btn{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 40px;
+}
+.btn-primary{
+  border-radius: 40px;
+  background-color: #ff4e50;
+  border-color: #ff4e50;
+  font-size: 14px;
+}
+.btn-secondary{
+  border: solid 2px #ff4e50;
+  background-color: #ffffff;
+}
+.btn-outline{
+   border: solid 2px #ffffff;
+   color: #fff;
+}
+
+/*How it Works : Start*/
+
+.howitworks{
+
+}
+.howitworks__cont {
+    position: relative;
+}
+
+.howitworks__cont__textcont {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+    display: block;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.img-responsive{
+  width: 100%
+}
+.howitworks h3{
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff
+}
+.howitworks--cont{
+  position: absolute;
+  bottom: 0;
+}
+.howitworks__btn{
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #ffffff;
+ padding: 5px 20px;
+}
+.howitworks p{
+  font-size: 14px;
+  font-weight: 300;
+  color: #e3e3e3;
+  font-family: roboto
+}
+.howitworks--img1{
+    background-image: url("../image/works3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 400px;
+    padding: 10px;
+    position: relative;
+}
+.howitworks--img2{
+    background-image: url("../image/works1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 400px;
+    padding: 10px;
+    position: relative;
+}
+.howitworks--img3{
+    background-image: url("../image/works2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 400px;
+    padding: 10px;
+    position: relative;
+}
+
+/* Neet a partner : Start*/
+
+.meetapartner{
+ text-align: center;
+}
+.meetapartner h3{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #444444;
+    margin: 17px 0 12px 0;
+}
+.meetapartner p{
+  font-size: 14px;
+  font-weight: 300;
+  color: #666;
+  line-height:1.25;
+  font-family: roboto;
+}
+.meetapartner__img{
+  width: 120px;
+  height: 120px;
+
+}
+.seeyourpartner{
+  font-size: 14px;
+ font-weight: bold;
+ margin:40px 0 0 0;
+
+}
+.seeyourpartner p{
+  margin: 0
+}
+.seeyourpartner p a{
+    color: #ff4e50;
+    font-size: 14px;
+}
+
+/* Discover your hoilday*/
+.discover--img{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 390px;
+}
+.discover--activities1{
+  background-image: url("../image/activities1.png");
+}
+
+.discover--activities2{
+  background-image: url("../image/activities2.png");
+
+
+}
+.discover--activities3{
+  background-image: url("../image/activities3.png");
+
+
+}
+.discover--activities4{
+  background-image: url("../image/activities4.png");
+
+}
+.discover--activities5{
+  background-image: url("../image/activities5.png");
+
+
+}
+.discover--activities6{
+  background-image: url("../image/activities6.png");
+
+}
+.discover--activities7{
+  background-image: url("../image/activities7.png");
+
+
+}
+/* Create your holiday : START*/
+
+.createholiday{
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.createholiday input[type=text]{
+  border-radius: 3px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.07);
+  border: solid 1px #d4d4d4;
+  background-color: #ffffff;
+  width: 300px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #999999;
+  margin-right: 10px;
+}
+/* Footer section : Start*/
+
+.footer{
+margin-top: 30px
+}
+.footer p.common {
+  font-size: 14px;
+ font-weight: bold;
+ color: #444444;
+ margin-bottom: 5px;
+}
+.footer--holiday{
+  font-size: 16px;
+  color: #ff4e50;
+}
+.footer--alfo{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.86;
+  color: #ff4e50 !important;
+}
+.footer--designed{
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #cccccc;
+}
+.footer--designedby{
+  font-size: 18px;
+  color: #999999;
+}
+.list-unstyled{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.86;
+  color: #999999;
+  font-family: roboto;
+}
+
+.list-unstyled a{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.86;
+  color: #999999;
+}
+
+.img-desk{
+  display: block;
+}
+.img-mob{
+  display:none;
+}
+
+
+/*Media query : Start*/
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .site-header ul {
+          float: none;
+    }
+  .howitworks__cont {
+      margin-bottom: 20px;
+   }
+   .img-desk{
+     display: none;
+   }
+   .img-mob{
+     display:block;
+     margin-bottom: 10px;
+   }
+   .m-b-20{
+     margin-bottom: 0px !important;
+ }
+
+ .site-header ul {
+         float: none;
+   }
+   .footer{
+     text-align: center;
+   }
+   .section {
+      padding-top: 0px;
+   }
+   .createholiday{
+     margin-bottom: 0px;
+   }
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* How it works*/
+  .howitworkstitle{
+    margin-top: 60px;
+  }
+  .howitworks__cont {
+      margin-bottom: 20px;
+   }
+  /* Discover your hoilday*/
+  .discover--img{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 11em;
+  }
+ .img-desk{
+   display: none;
+ }
+ .img-mob{
+   display:block;
+   margin-bottom: 10px;
+ }
+  /* Create your holiday : START*/
+
+
+  .createholiday input[type=text]{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .createholiday--button{
+    width: 100%;
+    }
+
+  .footer{
+    text-align: center;
+  }
+
+  .m-b-20{
+    margin-bottom: 0px !important;
+ }
+ .section {
+    padding-top: 0px;
+ }
+ .width100{
+   width: 100%
+ }
+ .createholiday{
+   margin-bottom: 0px;
+ }
+
+ .site-header ul {
+         float: none;
+   }
+}
+/*Media query : ENDS */
+.img-responsive{
+  width: 100%
+}
+.m-b-20{
+  margin-bottom: 30px;
+}
+.holiday-logo{
+  font-size: 20px;
+font-weight: bold;
+color: #ffffff;
+margin-bottom: 30px;
+}
